@@ -1,0 +1,44 @@
+/* Author: Mauro Leoci */
+
+/* Utility CSS */
+
+.fx {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fx-end {
+    display: flex;
+    align-items: flex-end;
+}
+
+.fx-grow {
+    flex-grow: 1;
+}
+
+.fx-center {
+    display: flex;
+    align-items: center;
+}
+
+.bold, strong {
+    font-weight: 600;
+}
+
+/* Background Colors */
+
+.b-red{
+    background: #f9423a;
+}
+.b-blue{
+    background: #2650ff;
+}
+.b-yellow{
+    background: #f2a700;
+}
+.b-purple{
+    background: #9924ff;
+}
+.b-cyan{
+    background: #07bb9c;
+}

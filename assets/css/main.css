@@ -1,0 +1,179 @@
+/* Author: Mauro Leoci */
+
+/* Reset CSS */
+* {
+    box-sizing: border-box; margin: 0; padding: 0;
+}
+
+body {
+    width: 70vw;
+    margin: 0 auto;
+    font-family: LFTEtica,-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+}
+
+/* General */
+a {
+    color: #f9423a;
+    text-decoration: none;
+}
+
+.annuncioButton, a {
+    cursor: pointer;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.body a {
+    display: table-cell;
+    text-decoration: none;
+    color: #717e8f;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.body a:hover {
+    text-decoration: underline;
+}
+
+
+ul li:before {
+    display: table-cell;
+    color: #dfe3ed;
+    content: "|";
+    padding: 0 8px;
+}
+
+ul li:first-child:before {
+    content: "";
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #3c4858;
+}
+
+header {
+        background-color: #fff;
+        border-bottom: 1px solid #dfe3ed;
+        border-top: 1px solid #dfe3ed;
+        height: 80px;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.label {
+    color: #3c4858;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 6px;
+}
+
+input, select {
+    border: 1px solid black;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.title {
+    line-height: 28px;
+    font-size: 21px;
+    color: #3c4858;
+    margin-top: 8px;
+    display: block;
+}
+
+.label--red {
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    line-height: 18px;
+    color: #f9423a;
+}
+
+/* Buttons and Boxes */
+.boxCategory {
+    min-height: 85px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 148px;
+    padding: 30px 8px 8px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.boxButton {
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+    line-height: 30px;
+    color: #fff;
+    display: inline-block;
+    margin-top: 28px;
+    background: transparent;
+    border: 1px solid hsla(0,0%,100%,.65);
+    border-radius: 4px;
+    padding: 0;
+}
+
+.subitoButton {
+    height: 46px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9423a;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+}
+
+.annuncioButton {
+    line-height: 16px;
+    display: inline-block;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 4px;
+    background: #feeceb;
+    border: 1px solid #feeceb;
+    color: #f9423a;
+    fill: #f9423a;
+    height: 40px;
+    padding: 0 14px;
+    width: 194px;
+}
+
+
+.annuncioButton:hover {
+    border: 1px solid red;
+}
+
+
+/* Search Box */
+
+.search-box {
+    gap: 10px;
+    background-color: #fff;
+    margin-bottom: 48px;
+    padding: 20px;
+    margin: 50px 20px;
+    border-radius: 4px;
+    box-shadow: 0 10px 24px 0 rgb(0 0 0 / 10%);
+}
+
+div .subitoButton {
+    width: 64px;
+}
