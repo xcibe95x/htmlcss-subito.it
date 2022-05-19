@@ -338,15 +338,15 @@ input:focus {
 }
 
 .safety1 {
-    background-image: url('/assets/img/safety1.webp');
+    background-image: url(/assets/img/safety1.webp);
 }
 
 .safety2 {
-    background-image: url('/assets/img/safety2.webp');
+    background-image: url(/assets/img/safety2.webp);
 }
 
 .safety3 {
-    background-image: url('/assets/img/safety3.webp');
+    background-image: url(/assets/img/safety3.webp);
 }
 
 
