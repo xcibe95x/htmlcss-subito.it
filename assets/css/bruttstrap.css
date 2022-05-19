@@ -117,6 +117,10 @@ input:focus {
     flex: 1 0;
 }
 
+.fx-align-end {
+    align-self: flex-end;
+}
+
 .fx-center {
     display: flex;
     align-items: center;
