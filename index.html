@@ -57,7 +57,7 @@
 
             <div class="inputbox fx">    
                 <span class="fx-center input-icon"> <svg class="icon" role="img" aria-hidden="true" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Lens" stroke="none" stroke-width="1" fill="#aeb9c6" fill-rule="evenodd"><path d="M15.597 14.205a.989.989 0 0 1 .098.086l5.014 5.014a.993.993 0 1 1-1.404 1.404l-5.014-5.014a1.002 1.002 0 0 1-.086-.098 7 7 0 1 1 1.392-1.392zM10 15a5 5 0 1 0 0-10 5 5 0 0 0 0 10z"></path></g></svg></span>
-                <input type="textbox" placeholder="Vespa, iPhone, Bilocale">
+                <input id="search" type="textbox" placeholder="Vespa, iPhone, Bilocale">
             </div>
 
         </div>
@@ -68,7 +68,7 @@
                 <span class="fx-center input-icon"> <img src="https://assets.subito.it/static/icons/cactus/category-squares.svg" width="24" height="24" alt="" class="Form_input-icon__Cln81">
                 </span>
       
-            <select clas="decorated" name="categories">
+            <select id="category" name="categories">
                 <option value="all-categories">Tutte le categorie</option>
                 <option value="informatica">Informatica</option>
                 <option value="console">Console e Videogiochi</option>
@@ -84,17 +84,17 @@
       
                 <div class="inputbox fx">    
                     <span class="fx-center input-icon"> <svg role="img" aria-hidden="true" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Pin" stroke="none" stroke-width="1" fill="#aeb9c6" fill-rule="evenodd"><path d="M12 22c-5.333-5.054-8-9.054-8-12a8 8 0 1116 0c0 2.946-2.667 6.946-8 12zM6 10c0 2.008 1.969 5.156 6 9.207 4.031-4.051 6-7.2 6-9.207a6 6 0 10-12 0zm6 3a3 3 0 110-6 3 3 0 010 6zm0-2a1 1 0 100-2 1 1 0 000 2z"></path></g></svg>
-                        <input type="textbox" placeholder="Comune, Provincia, o Regione">
+                        <input id="regione" type="textbox" placeholder="Comune, Provincia, o Regione">
                 </div>
 
             </div>
             
             <div class="fx-end">
-                <form action="https://xcibe95x.com">
-                <button class="subitoButton" type="submit" value="Search">
+
+                <button class="subitoButton" type="submit" value="Search" onclick="alert('Hai cercato ' + document.getElementById('search').value + ' Categoria: ' + document.getElementById('category').options[document.getElementById('category').selectedIndex].text + ' in' + document.getElementById('regione').value);">
                 <img src="https://subito.it/ekhaya/lens-white.svg" alt="" width="24" height="24">
                 </button>
-            </form>
+
             </div>
 
         </form>
