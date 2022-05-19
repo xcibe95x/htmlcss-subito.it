@@ -1,16 +1,107 @@
 /* Author: Mauro Leoci (xcibe95x) aka Cibe */
-/* Flex, Bruttstrap Library v1.0 */
-/* Since we are limited in using stuff such as Bootstrap
+/* Flex, Bruttstrap Library v1.0.3 */
+
+/* Since we are limited in using stuff, such as Bootstrap
 /* I decided to write BRUTTstrap for the job, so i can just import it
 /* And have some out of the Box Style, i'm Going to Update it Project by Project
-/* We Already Got BuTTons and Flex Commands in V1 Yay */
+
+/* Variables */
+:root {
+
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+    --cibe-bruttstrapp-red: #f9423a;
+    --cibe-bruttstrapp-purple: #9924ff;
+    --cibe-bruttstrapp-yellow: #f2a700;
+    --cibe-bruttstrapp-cyan: #07bb9c;
+    --cibe-bruttstrapp-blue: #2650ff;
+    --cibe-bruttstrapp-light: #f7f8fb;
+
+}
 
 /* Reset CSS */
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box; margin: 0; padding: 0;
 }
 
+html {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  @-ms-viewport {
+    width: device-width;
+  }
+  
+  article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+  }
+
+  select:focus-visible {
+    outline: none;
+    border: none;
+}
+
 /* Utility CSS */
+::placeholder {
+    color: #dfe3ed;
+}
+
+
+a, select, button {
+    cursor: pointer;
+}
+
+input, select {
+    color: rgb(60, 72, 88, 0.6);
+    border: 1px solid #dfe3ed;
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 4px;
+    width: 100%;
+    height: 45px;
+    background: white; /* Gecko Browser Work Around for Gray bar */
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #aeb9c6;
+}
+
 
 .fx {
     display: flex;
@@ -24,7 +115,6 @@
 
 .fx-grow {
     flex: 1 0;
-    align-self: flex-end;
 }
 
 .fx-center {
@@ -38,29 +128,196 @@
     justify-content: space-evenly;
 }
 
+.fx-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 25px;
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #717E8F;
+}
+
+.fx-gap-5 {
+    gap: 5px;
+}
+
+.fx-gap-10 {
+    gap: 10px;
+}
+
+.fx-gap-20 {
+    gap: 20px;
+}
+
+.fx-gap-30 {
+    gap: 30px;
+}
+
+.fs-1 {
+    font-size: 38px;
+}
+
+.fs-2 {
+    font-size: 24px;
+}
+
+.fs-3 {
+    font-size: 18px;
+}
+
+.fs-4 {
+    font-size: 16px;
+}
+
+.fs-5 {
+    font-size: 14px;
+}
+
+.fs-6 {
+    font-size: 6px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+
+
+.pad-left {
+    padding-left: 16px;
+}
+
+.ln {
+    line-height: 40px;
+}
+
 .bold, strong {
     font-weight: 600;
 }
 
-/* Background Colors */
-.b-white{
-    background: #fff;
+.text-center {
+    text-align: center;
 }
 
-.b-red{
-    background: #f9423a;
+.text-left {
+    text-align: left;
 }
-.b-blue{
-    background: #2650ff;
+
+.text-right {
+    text-align: right;
 }
-.b-yellow{
-    background: #f2a700;
+
+.soft-radius {
+    border-radius: 4px;
 }
-.b-purple{
-    background: #9924ff;
+
+/* Background Colors */
+
+.b-white{
+    background: var(--white);
 }
-.b-cyan{
-    background: #07bb9c;
+
+.b-red {
+    background: var(--cibe-bruttstrapp-red);
+}
+.b-blue {
+    background: var(--cibe-bruttstrapp-blue);
+}
+.b-yellow {
+    background: var(--cibe-bruttstrapp-yellow);
+}
+.b-purple {
+    background: var(--cibe-bruttstrapp-purple);
+}
+.b-cyan {
+    background: var(--cibe-bruttstrapp-cyan);
+}
+
+.b-light {
+    background: var(--cibe-bruttstrapp-light);
+}
+
+.b-shadow {
+    box-shadow: 0 10px 24px 0 rgb(0 0 0 / 10%);
+}
+
+.f-gray {
+    color: #717e8f;
+}
+
+.f-red {
+    color: var(--cibe-bruttstrapp-red);
+}
+
+.f-blue {
+    color: var(--cibe-bruttstrapp-blue);
+}
+
+.f-purple {
+    color: var(--cibe-bruttstrapp-purple);
+}
+
+.f-cyan {
+    color: var(--cibe-bruttstrapp-cyan);
+}
+
+.f-yellow {
+    color: var(--cibe-bruttstrapp-yellow);
+}
+
+/* Other Stuff */
+
+.vertical-block {
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 48px;
+}
+
+.pad-0 {
+    padding: 0;
+}
+
+.pad-10 {
+    padding: 10px;
+}
+
+.pad-20 {
+    padding: 20px;
+}
+
+.pad-30 {
+    padding: 30px;
+}
+
+
+.fw-100 {
+    font-weight: 100;
+}
+
+.fw-200 {
+    font-weight: 200;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
 }
 
 .btn {
@@ -75,4 +332,9 @@
     border: 1px solid hsla(0,0%,100%,.65);
     border-radius: 4px;
     padding: 0;
+}
+
+.btn:hover {
+    background-color: hsla(0,0%,100%,.25);
+    border: 1px solid hsla(0,0%,100%,.65);
 }
