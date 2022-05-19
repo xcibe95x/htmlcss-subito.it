@@ -6,7 +6,7 @@ body {
     width: 50vw;
     min-width: 500px;
     margin: 0 auto;
-    font-family: LFTEtica,-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    font-family: 'LFTEtica';
 }
 
 /* General */
@@ -342,4 +342,9 @@ input:focus {
     display: flex;
     flex-direction: column;
     line-height: 40px;
+}
+
+li img {
+    vertical-align: middle;
+    margin-right: 5px;
 }
