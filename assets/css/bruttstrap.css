@@ -159,33 +159,7 @@ input:focus {
     gap: 30px;
 }
 
-.fs-1 {
-    font-size: 38px;
-}
 
-.fs-2 {
-    font-size: 24px;
-}
-
-.fs-3 {
-    font-size: 18px;
-}
-
-.fs-4 {
-    font-size: 16px;
-}
-
-.fs-5 {
-    font-size: 14px;
-}
-
-.fs-6 {
-    font-size: 6px;
-}
-
-.fs-20 {
-    font-size: 20px;
-}
 
 
 
@@ -279,6 +253,25 @@ input:focus {
     margin-top: 48px;
 }
 
+.btn {
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+    line-height: 30px;
+    color: #fff;
+    display: inline-block;
+    margin-top: 28px;
+    background: transparent;
+    border: 1px solid hsla(0,0%,100%,.65);
+    border-radius: 4px;
+    padding: 0;
+}
+
+.btn:hover {
+    background-color: hsla(0,0%,100%,.25);
+    border: 1px solid hsla(0,0%,100%,.65);
+}
+
 .pad-0 {
     padding: 0;
 }
@@ -324,21 +317,30 @@ input:focus {
     font-weight: 600;
 }
 
-.btn {
-    cursor: pointer;
-    width: 100%;
-    font-size: 14px;
-    line-height: 30px;
-    color: #fff;
-    display: inline-block;
-    margin-top: 28px;
-    background: transparent;
-    border: 1px solid hsla(0,0%,100%,.65);
-    border-radius: 4px;
-    padding: 0;
+.fs-1 {
+    font-size: 38px;
 }
 
-.btn:hover {
-    background-color: hsla(0,0%,100%,.25);
-    border: 1px solid hsla(0,0%,100%,.65);
+.fs-2 {
+    font-size: 24px;
+}
+
+.fs-3 {
+    font-size: 18px;
+}
+
+.fs-4 {
+    font-size: 16px;
+}
+
+.fs-5 {
+    font-size: 14px;
+}
+
+.fs-6 {
+    font-size: 6px;
+}
+
+.fs-20 {
+    font-size: 20px;
 }
