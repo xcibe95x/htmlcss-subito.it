@@ -1,12 +1,10 @@
 /* Author: Mauro Leoci */
 
-/* Reset CSS */
-* {
-    box-sizing: border-box; margin: 0; padding: 0;
-}
+/* TODO: Comment and cleanup the code */
 
 body {
-    width: 70vw;
+    width: 50vw;
+    min-width: 500px;
     margin: 0 auto;
     font-family: LFTEtica,-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
 }
@@ -17,7 +15,11 @@ a {
     text-decoration: none;
 }
 
-.annuncioButton, a {
+nav > ul {
+    padding: 5px;
+}
+
+.annuncioButton, a, select, button {
     cursor: pointer;
 }
 
@@ -34,12 +36,12 @@ a {
     font-weight: 400;
 }
 
-.body a:hover {
+.body a:hover, .real-footer-links a:hover {
     text-decoration: underline;
 }
 
 
-ul li:before {
+nav ul li:before {
     display: table-cell;
     color: #dfe3ed;
     content: "|";
@@ -59,30 +61,26 @@ h1, h2, h3, h4, h5, h6 {
     color: #3c4858;
 }
 
-header {
-        background-color: #fff;
-        border-bottom: 1px solid #dfe3ed;
-        border-top: 1px solid #dfe3ed;
-        height: 80px;
-        padding: 0 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+main {
+    margin: 25px;
 }
 
-.label {
-    color: #3c4858;
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #dfe3ed;
+    border-top: 1px solid #dfe3ed;
+    height: 80px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label, .footer-links div > a, .real-footer-links li > a {
+    color: var(--gray);
     font-size: 14px;
     line-height: 20px;
     margin: 0 0 6px;
-}
-
-input, select {
-    border: 1px solid black;
-    font-size: 16px;
-    padding: 12px;
-    border-radius: 4px;
-    width: 100%;
 }
 
 .title {
@@ -103,33 +101,28 @@ input, select {
 /* Buttons and Boxes */
 .boxCategory {
     min-height: 85px;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     min-height: 148px;
-    padding: 30px 8px 8px;
+    padding: 32px 20px 20px;
     border-radius: 8px;
     text-align: center;
 }
 
-.boxButton {
-    cursor: pointer;
-    width: 100%;
-    font-size: 14px;
-    line-height: 30px;
-    color: #fff;
-    display: inline-block;
-    margin-top: 28px;
-    background: transparent;
-    border: 1px solid hsla(0,0%,100%,.65);
-    border-radius: 4px;
-    padding: 0;
+.boxCategory > img, .card {
+    width: 80%;
+    aspect-ratio: auto;
+}
+
+button.subitoButton {
+    width: 64px;
 }
 
 .subitoButton {
-    height: 46px;
+    height: 45px;
+    margin-bottom: 1px;
     font-size: 14px;
     display: flex;
     justify-content: center;
@@ -141,9 +134,13 @@ input, select {
     border: none;
 }
 
+.sb-margin {
+    margin: 12px 24px;
+}
+
+
 .annuncioButton {
     line-height: 16px;
-    display: inline-block;
     font-size: 14px;
     padding: 8px;
     border-radius: 4px;
@@ -154,26 +151,195 @@ input, select {
     height: 40px;
     padding: 0 14px;
     width: 194px;
+    justify-content: space-around;
 }
-
 
 .annuncioButton:hover {
     border: 1px solid red;
 }
 
-
 /* Search Box */
 
 .search-box {
     gap: 10px;
-    background-color: #fff;
-    margin-bottom: 48px;
     padding: 20px;
-    margin: 50px 20px;
+    margin: 50px 0;
     border-radius: 4px;
-    box-shadow: 0 10px 24px 0 rgb(0 0 0 / 10%);
 }
 
-div .subitoButton {
-    width: 64px;
+
+.tuttosubito {
+    background-image: url(/assets/img/pay.webp);
+    width: 300px;
+    height: 216px;
+    background-color: #f7f8fb;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 4px;
+}
+
+.tuttosubito1 {
+    margin-right: 20px;
+}
+
+.tuttosubito2 {
+    background-image: url(/assets/img/sell.webp);
+}
+
+.sellwidget {
+    min-height: 150px;
+    padding: 0 48px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(/assets/img/001_DESKTOP_inserisciannuncio.jpg);
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    border: 1px solid #dfe3ed;
+}
+
+.sellwidget_div {
+    margin: 0 0 0 235px;
+    max-width: 390px;
+    padding: 20px 0;
+}
+
+.appwidget_title {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.small-text {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.appwidget_images {
+    margin-top: 20px;
+}
+
+.findmore {
+    border-top: 1px solid #dfe3ed;
+    padding: 32px 0 32px;
+    border-bottom: 1px solid #dfe3ed;
+}
+
+.magazineWidget {
+    border-radius: 4px;
+    background-image: url(/assets/img/HP_BOX_earth_day_20220426.jpg);
+    padding-top: 36.25%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    position: relative;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 0 8px 16px;
+    flex: 1 1;
+    margin: 0 12px;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 232px;
+}
+
+.login {
+    padding: 20px;
+}
+
+
+/* Textbox With Icons */
+input, select {
+    color: rgb(60, 72, 88, 0.6);
+    border: none;
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+    height: 45px;
+}
+
+.input-icon {
+    color: rgb(60, 72, 88, 0.6);
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    height: 45px;
+}
+
+input:focus {
+    border: none;
+}
+
+.inputbox {
+    border: 1px solid #dfe3ed;
+    border-radius: 4px;
+}
+
+.inputbox:focus-within {
+    outline: none;
+    border: 1px solid #aeb9c6;
+}
+
+.discovery {
+    font-size: 21px;
+    line-height: 28px;
+    margin-bottom: 24px;
+}
+
+.footer-links div a {
+    margin-bottom: 4px;
+    margin-top: 6px;
+    color: var(--gray);
+}
+
+
+.card-affari {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 0 8px 16px;
+    flex: 1 1;
+    margin: 20px 12px;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 232px;
+
+}
+
+.safety1 {
+    background-image: url('/assets/img/safety1.webp');
+}
+
+.safety2 {
+    background-image: url('/assets/img/safety2.webp');
+}
+
+.safety3 {
+    background-image: url('/assets/img/safety3.webp');
+}
+
+
+.real-footer-links {
+    color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
 }
