@@ -1,5 +1,31 @@
 /* Author: Mauro Leoci */
 
+@font-face {
+    font-family: 'LFTEtica';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url('./assets/font/LFTEticaBk.woff2') format('woff2'),
+      url('./assets/font/LFTEticaBk.woff') format('woff'),
+      url('./assets/font/LFTEticaBk.ttf') format('truetype'),
+      url('./assets/font/LFTEticaBk.eot?#iefix')
+        format('embedded-opentype');
+  }
+  
+@font-face {
+    font-family: 'LFTEtica';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('./assets/font/LFTEticaSb.woff2')
+        format('woff2'),
+      url('./assets/font/LFTEticaSb.woff') format('woff'),
+      url('./assets/font/LFTEticaSb.ttf') format('truetype'),
+      url('./assets/font/LFTEticaSb.eot?#iefix')
+        format('embedded-opentype');
+  }
+  
+
 /* TODO: Comment and cleanup the code */
 
 body {
@@ -169,7 +195,7 @@ button.subitoButton {
 
 
 .tuttosubito {
-    background-image: url(/assets/img/pay.webp);
+    background-image: url("./assets/img/pay.webp");
     width: 300px;
     height: 216px;
     background-color: #f7f8fb;
@@ -188,7 +214,7 @@ button.subitoButton {
 }
 
 .tuttosubito2 {
-    background-image: url(/assets/img/sell.webp);
+    background-image: url("./assets/img/sell.webp");
 }
 
 .sellwidget {
@@ -197,7 +223,7 @@ button.subitoButton {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-image: url(/assets/img/001_DESKTOP_inserisciannuncio.jpg);
+    background-image: url("./assets/img/001_DESKTOP_inserisciannuncio.jpg");
     background-position: 0 0;
     background-size: contain;
     background-repeat: no-repeat;
@@ -234,7 +260,7 @@ button.subitoButton {
 
 .magazineWidget {
     border-radius: 4px;
-    background-image: url(/assets/img/HP_BOX_earth_day_20220426.jpg);
+    background-image: url("./assets/img/HP_BOX_earth_day_20220426.jpg");
     padding-top: 36.25%;
     width: 80%;
     background-repeat: no-repeat;
@@ -338,15 +364,15 @@ input:focus {
 }
 
 .safety1 {
-    background-image: url(/assets/img/safety1.webp);
+    background-image: url("./assets/img/safety1.webp");
 }
 
 .safety2 {
-    background-image: url(/assets/img/safety2.webp);
+    background-image: url("./assets/img/safety2.webp");
 }
 
 .safety3 {
-    background-image: url(/assets/img/safety3.webp);
+    background-image: url("./assets/img/safety3.webp");
 }
 
 
