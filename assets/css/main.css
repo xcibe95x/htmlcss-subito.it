@@ -242,6 +242,18 @@ button.subitoButton {
     position: relative;
 }
 
+.ADWidget {
+    border-radius: 4px;
+    background-image: url(https://tpc.googlesyndication.com/simgad/13233756688557260586?);
+    padding-top: 16.25%;
+    padding-left: 65.25%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    position: relative;
+}
+
 .card {
     background-color: #fff;
     border-radius: 8px;
