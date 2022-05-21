@@ -387,3 +387,205 @@ li img {
     vertical-align: middle;
     margin-right: 5px;
 }
+
+.nav-mobile {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #dfe3ed;
+}
+
+.nav-button {
+    cursor: pointer;
+    display: flex;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-button p {
+    color: #3c4858;
+    font-weight: 600;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+
+.search-title {
+    display: none;
+}
+
+/* Fix For Smaller Screens, Sorry I have a huge a** screen */
+@media screen and (max-width: 1348px) {
+    body {
+        width: 80vw;
+    }
+}
+
+
+@media screen and (max-width: 978px) {
+
+    body {
+        width: 100vw;
+    }
+
+    .nav-mobile {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .affari-section {
+        overflow: scroll;
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    .affari-section h2 {
+        overflow: none;
+    }
+
+    .affari-container {
+        width: 999px;
+    }
+
+    .affari-section::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    body {
+        width: 100%;
+        min-width: 0;
+    }
+
+    main {
+        margin-top: 0;
+    }
+
+    header {
+        justify-content: center;
+        border: 0;
+    }
+
+    header img {
+        width: 130px;
+    }
+
+    nav ul, .login, header .annuncioButton, .search-box label, .boxCategory .btn, .annuncioButton svg  {
+        display: none;
+    }
+
+    .search-box, .search-title {
+        display: block;
+        margin: 0;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    button.subitoButton {
+        width: 100%;
+    }
+
+    .inputbox {
+        Content: 'Cerca';
+        margin-bottom: 20px;
+    }
+    
+    button.subitoButton img {
+        width: 0px;
+        height: 0px;
+    }
+
+    button.subitoButton:after {
+        Content: 'Cerca';
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .discovery {
+        font-size: 16px;
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+
+    .annuncioButton {
+        width: 100%;
+    }
+
+    .boxCategory {
+        min-height: 85px;
+        padding: 0;
+    }
+
+    .boxCategory img {
+        width: 40%;
+    }
+
+    .b-blue img {
+        content:url("./assets/img/motori-mobile-white.svg");
+    }
+
+    .b-yellow img {
+        content:url("./assets/img/market-mobile-white.svg"); 
+    }
+
+    .b-purple img {
+        content:url("./assets/img/immobili-mobile-white.svg"); 
+    }
+
+    .b-cyan img {
+        content:url("./assets/img/lavoro-mobile-white.svg"); 
+    }
+
+    .magazineWidget {
+        padding-top: 36.25%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: cover;
+        position: relative;
+
+    }
+
+    .querybox {
+        flex-direction:column;
+        align-items: flex-start;
+    }
+
+    .querybox .pad-left {
+        padding-left: 0;
+    }
+
+
+    .affari-section {
+        overflow: scroll;
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    .affari-section h2 {
+        overflow: none;
+    }
+
+    .affari-container {
+        width: 800px;
+    }
+
+    .affari-section::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
+}
+
+
+
+
