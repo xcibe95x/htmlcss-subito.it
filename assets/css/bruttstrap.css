@@ -233,6 +233,10 @@ input:focus {
     color: #717e8f;
 }
 
+.f-light {
+    color: var(--cibe-bruttstrapp-light);
+}
+
 .f-red {
     color: var(--cibe-bruttstrapp-red);
 }

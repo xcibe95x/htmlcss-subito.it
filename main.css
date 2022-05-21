@@ -405,6 +405,11 @@ li img {
     width: 100%;
     align-items: center;
     padding: 10px;
+    fill: #aeb9c6;
+}
+
+.nav-button.active {
+    fill: black;
 }
 
 .nav-button p {
@@ -584,6 +589,37 @@ li img {
     .affari-section::-webkit-scrollbar { 
         display: none;  /* Safari and Chrome */
     }
+
+    .tuttosubito-m {
+        flex-direction: column;
+    }
+
+    .tuttosubito {
+        margin-top: 50px;
+        min-height: 200px;
+    }
+
+    .sellwidget_div {
+        margin: 0;
+        text-align: center;
+    }
+
+    .sellwidget {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .sellwidget .annuncioButton {
+        width: 80%;
+        margin: 20px;
+    }
+
+    .sellwidget div:first-child {
+        flex-direction: column;
+
+    }
+
 }
 
 
